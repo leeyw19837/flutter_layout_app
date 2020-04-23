@@ -88,12 +88,21 @@ class MyApp extends StatelessWidget {
           body: Center(
             child: Column(
               children: <Widget>[
-                TapboxA(),
-                ParentWidget(),
+                Image(
+                  image: AssetImage(
+                      'images/photo.jpeg',
+                  ),
+                  width: 200,
+                  height: 440,
+                  fit: BoxFit.cover,
+                )
               ],
             ),
           ),
-        ));
+        ),
+
+    )
+    ;
   }
 
   Column _buildBottomColumn(Color color, IconData icon, String label) {
